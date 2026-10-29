@@ -39,9 +39,6 @@ O processo de compilação e execução no .NET não gera diretamente código de
 3. **JIT Converte → Código de Máquina:** O compilador interno **JIT** (*Just-In-Time*) traduz as instruções IL para linguagem nativa do processador (x64, ARM, etc.).
 4. **Execução:** O processador roda o código nativo.
 
-> **💬 Pergunta para a turma:**  
-> *“Se eu apagar o Runtime da máquina, o programa roda?”*  
-> 👉 **Resposta esperada:** **Não.** O programa compilado contém apenas IL. Sem o Runtime e o compilador JIT, o sistema operacional não sabe o que fazer com as instruções.
 
 ---
 
@@ -124,10 +121,6 @@ dotnet build ──► Compila C# para IL (gera arquivo .dll)
 dotnet run   ──► Aciona o Runtime ──► JIT converte IL ──► Executa
 ```
 
-> **💬 Pergunta para a turma:**  
-> *“Ao usar esses comandos no terminal, estamos usando IDE ou CLI?”*  
-> 👉 **Resposta:** **CLI** (*Command Line Interface*).
-
 ---
 
 ## 📦 5. Compilação Explícita (`dotnet build`)
@@ -160,10 +153,6 @@ code .
 ### Visual Studio 2022
 
 * Abra o arquivo `.csproj` ou a pasta do projeto diretamente pela interface do Visual Studio.
-
-> **💬 Pergunta para a turma:**  
-> *“O que usamos para desenvolver: Runtime ou SDK?”*  
-> 👉 **Resposta:** **SDK** (pois precisamos dos compiladores, templates e ferramentas de build. O Runtime serve apenas para executar).
 
 ---
 
